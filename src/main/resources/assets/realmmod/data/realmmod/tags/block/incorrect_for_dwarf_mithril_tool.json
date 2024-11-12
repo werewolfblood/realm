@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ],
+  "remove": [
+    "#realmmod:needs_dwarf_mithril_tool"
+  ]
+}

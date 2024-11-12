@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "realmmod",
+	"version": "${version}",
+	"name": "Realm Mod",
+	"description": "rpg mmo things!",
+	"authors": [
+		"rpg_mmo!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.andrew.realmmod.RealmMod"
+		],
+		"fabric-datagen": [
+			"dev.andrew.realmmod.RealmModDataGenerator"
+		],
+		"client" : [
+			"dev.andrew.realmmod.RealmModClient"
+		]
+	},
+	"mixins": [
+		"realmmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
